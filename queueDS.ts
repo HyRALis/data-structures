@@ -23,6 +23,6 @@ export default class Queue<T> implements Iterable<T> {
     return this.list.getFront();
   }
   [Symbol.iterator](): Iterator<T> {
-    this.list[Symbol.iterator];
+    return this.list[Symbol.iterator]();
   }
 }
